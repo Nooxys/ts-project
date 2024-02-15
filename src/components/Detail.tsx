@@ -47,7 +47,8 @@ const Detail = () => {
                 <Card.Title>{article?.title}</Card.Title>
                 <Card.Text>{article?.summary}</Card.Text>
                 <Card.Text>
-                  from: {article?.news_site} - {article?.published_at}
+                  from: {article?.news_site} -
+                  {article?.published_at.toLocaleString().slice(0, 10)}
                 </Card.Text>
                 <Card.Text>FULL ARTICLE IN OUR MAIN WEBSITE!</Card.Text>
                 <a href="https://europeanspaceflight.com/sidereus-space-complete-short-duration-hot-fire-test-campaign/">
